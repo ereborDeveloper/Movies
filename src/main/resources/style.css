@@ -1,0 +1,131 @@
+#root, #tabPane {
+    -fx-background-color: linear-gradient(from 50% 20% to 50% 100%, #b44, #845);
+    -fx-font-family: "Arial";
+}
+
+#settings
+{
+    -fx-background-color: #333;
+    -fx-effect: dropshadow(gaussian , rgba(55,55,55,0.1) , 0,3,0,0);
+}
+
+.tab {
+    -fx-background-color: linear-gradient(from 50% 20% to 50% 100%, #a44, #b44);
+}
+.tab-header-background {
+    -fx-background-color: linear-gradient(from 50% 20% to 50% 100%, #a44, #b44);
+}
+
+.text-field {
+    -fx-padding: 10;
+}
+
+.tab {
+    -fx-padding: 8;
+
+}
+
+.text-field {
+    -fx-background-color: rgba(55,55,55,0.1), white, #333;
+    -fx-padding: 5 10 5 10;
+    -fx-background-insets: -1 -1 -1 -1, 1 1 1 1, 0 0 0 0;
+    -fx-text-fill: #ddd;
+    -fx-effect: dropshadow(gaussian , rgba(55,55,55,0.1) , 3,0,3,3);
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #fff;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-font-size: 13;
+    -fx-font-weight: normal;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian , rgba(255,255,255,1) , 1,0,0,0);
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: #ddd;
+    -fx-effect: dropshadow(gaussian , rgba(255,255,255,1) , 0.5,0,0,0);
+    -fx-pref-height: 1;
+    -fx-pref-width: 5;
+}
+
+#movie {
+    -fx-background-color: linear-gradient(from 50% 100% to 50% 20%, #333, #444);
+    /*-fx-padding: 2 0 0 2;*/
+    /*-fx-background-radius: 5;*/
+    -fx-border-color: #222;
+    /*-fx-border-radius: 5;*/
+    -fx-effect: dropshadow(gaussian , rgba(55,55,55,0.1) , 3,0,3,3);
+}
+
+#title {
+    -fx-background-color: linear-gradient(from 50% 100% to 50% 20%,  rgba(0,0,0,0.7), rgba(255,255,255,0.05));
+    -fx-border-width: 1 0 0 0;
+    -fx-border-style: solid;
+    -fx-border-color: #222;
+    -fx-font-size: 11;
+    -fx-text-fill: #ddd;
+    -fx-effect: dropshadow(gaussian , rgba(55,55,55,0.1) , 3,0,3,3);
+    -fx-text-alignment: left;
+    -fx-padding: 5 5 5 5;
+}
+
+#underline {
+    -fx-underline: true;
+}
+
+#imdbRating{
+    -fx-background-color: linear-gradient(from 50% 20% to 50% 100%, #E1BC45, #DDA307);
+    -fx-border-color: #323232;
+    -fx-padding: 2 3;
+    -fx-text-fill:#020202;
+    -fx-font-weight: bold;
+    -fx-background-radius: 2;
+    -fx-border-radius: 2;
+    -fx-border-width:1;
+}
+#poster{
+/*    -fx-border-color: #333;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+    -fx-padding: 0;
+    -fx-effect: dropshadow(gaussian , rgba(55,55,55,0.1) , 3,0,3,3);*/
+}
+#posterGradient
+{
+    -fx-background-color: linear-gradient(from 50% 100% to 50% 50%, rgba(0,0,0,0.7), rgba(255,255,255,0.1));
+}
+
+/*.auto-complete-popup > .list-view {
+    -fx-background-color: linear-gradient(to bottom,
+    derive(-fx-color, -17%),
+    derive(-fx-color, -30%)
+    ),
+    -fx-control-inner;
+    -fx-background-insets: -1 -2 -1 -1, 0 -1 0 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 12, 0.0, 0, 8);
+}
+.auto-complete-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    -fx-padding: 4 0 4 5;
+    !* No alternate highlighting *!
+    -fx-background: -fx-control-inner-background;
+}
+.auto-complete-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected {
+    -fx-background:  -fx-selection-bar-non-focused;
+    -fx-background-color:  -fx-background;
+}
+.auto-complete-popup  > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover,
+.auto-complete-popup  > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover {
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+}
+.auto-complete-popup > .list-view > .placeholder > .label {
+    -fx-text-fill: derive(-fx-control-inner-background,-30%);
+}*/
+

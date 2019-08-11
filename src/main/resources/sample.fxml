@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.ScrollPane?>
+<GridPane id="root" fx:id="rootPane" alignment="center" gridLinesVisible="true" hgap="10" stylesheets="style.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Fxml">
+
+<!--    <fx:define>
+        <Screen fx:factory="getPrimary" fx:id="screen"/>
+    </fx:define>-->
+    <columnConstraints>
+        <!--minWidth="${screen.visualBounds.width}"-->
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="100">
+        </ColumnConstraints>
+    </columnConstraints>
+
+    <rowConstraints>
+        <!--minHeight="${screen.visualBounds.height}"-->
+        <RowConstraints percentHeight="100" vgrow="ALWAYS" />
+    </rowConstraints>
+    <children>
+      <GridPane id="inside">
+          <columnConstraints>
+              <!--minWidth="${screen.visualBounds.width}"-->
+              <ColumnConstraints hgrow="ALWAYS" percentWidth="93">
+              </ColumnConstraints>
+              <ColumnConstraints hgrow="ALWAYS" percentWidth="7">
+              </ColumnConstraints>
+          </columnConstraints>
+
+          <rowConstraints>
+              <!--minHeight="${screen.visualBounds.height}"-->
+              <RowConstraints percentHeight="100" vgrow="ALWAYS" />
+          </rowConstraints>
+          <children>
+              <JFXTabPane id="tabPane" fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                  <tabs>
+                      <Tab text="Главная">
+                          <content>
+                              <GridPane id="searchGrid" fx:id="searchGrid" hgap="10" vgap="10" minWidth="400">
+                                  <padding>
+                              <Insets bottom="10" left="10" right="10" top="10" />
+                           </padding>
+                                  <columnConstraints>
+                                      <ColumnConstraints fx:id="column" hgrow="ALWAYS" percentWidth="20.0" />
+                                      <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" />
+                                      <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" />
+                                      <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" />
+                                      <ColumnConstraints hgrow="ALWAYS" percentWidth="20.0" />
+                              <ColumnConstraints />
+                                  </columnConstraints>
+                                  <children>
+                                      <TextField id="searchString" fx:id="searchString" maxWidth="Infinity" promptText="Поиск фильма по названию..." GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2" />
+                                  </children>
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                              </GridPane>
+                          </content>
+                      </Tab>
+                      <Tab text="К просмотру">
+                          <content>
+                              <GridPane>
+                           <Label text="В разработке" />
+                           <columnConstraints>
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                           </rowConstraints>
+                        </GridPane>
+                          </content>
+                      </Tab>
+                      <Tab text="Наша библиотека">
+                          <content>
+                              <GridPane>
+                           <Label text="В разработке" />
+                           <columnConstraints>
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                           </rowConstraints>
+                        </GridPane>
+                          </content>
+                      </Tab>
+                      <Tab text="Афиша">
+                          <content>
+                              <GridPane>
+                           <Label text="В разработке" />
+                           <columnConstraints>
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                           </rowConstraints>
+                        </GridPane>
+                          </content>
+                      </Tab>
+                      <Tab text="Вышло на DVD">
+                          <content>
+                              <GridPane>
+                           <Label text="В разработке" />
+                           <columnConstraints>
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                           </rowConstraints>
+                        </GridPane>
+                          </content>
+                      </Tab>
+                  </tabs>
+              </JFXTabPane>
+              <GridPane id = "settings" GridPane.rowIndex="0" GridPane.columnIndex="1"><Label text="Settings"></Label></GridPane>
+          </children>
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+    </children>
+</GridPane>
